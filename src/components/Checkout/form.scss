@@ -1,0 +1,45 @@
+.title{
+    display: block;
+    justify-content: space-between;
+    color: #000000;
+    padding: 10px 0px ;
+    margin-bottom: 15px;
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-around;
+    margin-top: 20px;
+    .formInput{
+        display: flex;
+        padding-bottom: 10px;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+        label{
+            color: #454352;
+            padding-right: 5px;
+        }
+        input{
+            font-family: 'Bebas', sans-serif;
+            font-size: 16px;
+        }
+    }
+}
+.finalize{
+    float: right;
+    border: none;
+    background: #8d133c;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    font-family: 'Bebas', sans-serif;
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .form{
+        grid-template-columns: 1fr;
+	    grid-template-rows: auto auto;
+    }
+}

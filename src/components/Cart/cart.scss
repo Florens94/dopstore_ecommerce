@@ -1,0 +1,171 @@
+.cart{
+    font-family: 'Courrier New', sans-serif;
+    font-weight: 100;
+    width: 100%;
+    max-width: 1200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        color: #000000;
+        padding: 10px 0px ;
+        border-bottom: 1.5px solid #FFFFFF;
+        margin-bottom: 15px;
+        .validation{
+            color: #25d366;
+        }
+        .continue{
+            border: none;
+            background: #d110a7;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 20px;
+            font-family: 'Bebas', sans-serif;
+            padding: 10px;
+            &:hover{
+                background: #ce2883;
+            }
+        }
+    }
+    .shopping-cart{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      .product {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #D1C6AD;;
+        label{
+          font-weight: bold;
+        }
+        .product-image {
+          padding:0 10px ;
+          img { 
+            width: 100%;
+            display: block;
+          }
+        }
+        .product-details {
+          display: flex;
+          justify-content: space-between;
+          color: #63022f;
+          font-weight: bold;
+        }
+        .product-quantity {
+          input {
+            width: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Bebas', sans-serif;
+            }
+          }
+          .remove-product {
+            border: none;
+            font-size: 20px;
+            padding: 4px 8px;
+            background-color: #FFFFFF;
+            color: #FFFFFF;
+          }
+        }
+      }
+    .totals {
+        .totals-item {
+            float: right;
+            clear: both;
+            width: 100%;
+            margin-bottom: 10px;
+                          
+            label {
+                float: left;
+                clear: both;
+                width: 79%;
+                text-align: right;
+            }
+          
+            .totals-value {
+                float: right;
+                width: 21%;
+                text-align: right;
+                &:before{
+                    content: 'USD';
+                }
+            }
+        }
+        .t-price{
+            color: #8f0a0a;
+            font-weight: bold;
+        }
+        .checkout{
+            float: right;
+            border: none;
+            background: #000000;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            font-family: 'Bebas', sans-serif;
+            padding: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .cart{
+    
+    .shopping-cart {
+      margin: 0;
+      padding-top: 20px;
+      .product:not(:first-of-type) label {
+        display: none;
+      }
+      .product{
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+        label{
+          display: block;
+          margin-top: -16px;
+          margin-bottom: 16px;
+        }
+        *+* {
+          padding: unset;
+        }
+        .product-image {
+          float: right;
+          width: auto;
+          img {
+            margin: 0 0 10px 10px;
+          }
+        }
+        
+        .product-details {
+          justify-content: space-around;
+          float: none;
+          margin-bottom: 10px;
+          width: auto;
+        }
+        
+        .product-price {
+          clear: both;
+          width: 70px;
+        }
+        
+        .product-quantity {
+          width: 100px;
+          input {
+            margin-left: 20px;
+          }
+        }
+        .product-removal {
+          width: auto;
+        }
+        
+        .product-line-price {
+          float: right;
+          width: 70px;
+        }
+      }
+    }
+  }  
+}
+

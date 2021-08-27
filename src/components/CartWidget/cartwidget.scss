@@ -1,0 +1,12 @@
+.cart-widget{
+    text-decoration: none;
+    .items{
+        display: inline-flex;
+        color: #000000;
+        font-size: 14px;
+        border-radius: 50%;
+    }
+    .bag-icon{   
+        width: 30%;
+    }
+}

@@ -1,0 +1,20 @@
+.home{
+    background: #3D3672;
+    
+    padding: 80px, 0px, 50px, 0px;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    div{
+        margin: auto;
+        h1,span, p{
+            color: #cecece;
+            display: block;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+    }
+}
