@@ -9,7 +9,7 @@ E-commerce de lentes para cámaras de fontos y de cine.
 
 
 # para iniciar la app:
-1. Clonar el repositorio ()
+1. Clonar el repositorio (https://github.com/Florens94/dopstore_ecommerce)
 2. instalar node_modules y sass modules (`npm i`)
 3. iniciar la app con el command (`npm start`)
 

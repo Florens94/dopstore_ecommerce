@@ -6,7 +6,7 @@ const Home= () => {
     return(
         <section className="home">
             <div>
-            <h1>¡Bienvenidxs a la tienda online favorita de lxs directores de fotografía!</h1>
+            <h1>HORA AZUL DoP STORE</h1>
             <p>Todos nuestros productos</p>
             </div>
             <ItemListContainer/>
