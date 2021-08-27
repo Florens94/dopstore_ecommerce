@@ -9,7 +9,6 @@ const ItemList =({list}) => {
                 <Item key={product.id} item={product}/>
             )}
         </section>
-        
     )
 }
 

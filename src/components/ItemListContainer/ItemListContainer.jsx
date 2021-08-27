@@ -28,7 +28,6 @@ const ItemListContainer = () => {
         
     },[category])
     
-
     
     return(
         <section>
@@ -37,6 +36,5 @@ const ItemListContainer = () => {
         
     )
 }
-
 
 export default ItemListContainer;
