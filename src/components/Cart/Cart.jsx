@@ -37,7 +37,7 @@ const Cart = () => {
                 
             }
         ).catch((e) => {console.log(e)})
-        
+
         const Itemscollection = db.collection("ItemCollection")
         const batch = getFirestore().batch()
 
