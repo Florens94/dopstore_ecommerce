@@ -18,4 +18,5 @@ Esto levantará la app en su navegador predeterminado.
 Para ver este proyecto online, puede hacerlo mediante este link:
 
 # navegabilidad:
-
+https://drive.google.com/file/d/1qQXyvw1EHL3h7W0UdphsS8ndfXysthZv/view?usp=sharing <= para descargar
+https://vimeo.com/593577067/11416c27a8 <= para visualizar
