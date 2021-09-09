@@ -3,15 +3,10 @@ import logo from "./logo.png"
 import './navbar.scss'
 import CartWidget from '../CartWidget/CartWidget';
 import { Link } from 'react-router-dom'
+import categories from '../../categories.json'
 
 
 const NavBar = () => {
-
-    const [links] = useState([
-        {name: 'NIKON', url: '/category/nikon'}, 
-        {name: 'CANON', url: '/category/canon'}, 
-        {name: 'SONY', url: '/category/sony'}
-      ])
     
     return(
         <header >
@@ -19,12 +14,11 @@ const NavBar = () => {
                 <Link to='/' className="navbar-logo">
                     <img src={logo} alt={"logo"}/>
                 </Link>
-                <ul className="nav-menu">
-                    {links.map((link, i) => {
-                    return (<li  key={i}><Link className="nav-link" to={link.url}>{link.name}</Link></li>)
-                    })}
-                    <CartWidget/>
-                </ul>
+                <ul className="nav-menu" >
+            {categories.map((category, i)=> {
+                return (<li key={i}><Link className='nav-link' to={category.url}>{category.title}</Link></li>)})}
+            <CartWidget/>
+          </ul>
             </nav>
         </header>
     )

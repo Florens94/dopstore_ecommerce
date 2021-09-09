@@ -6,6 +6,7 @@ import Home from '../Home/Home'
 import Cart from '../Cart/Cart'
 import Category from '../../data/Category'
 
+
 const Routes = ({greeting}) => {
 
     return(
@@ -15,14 +16,14 @@ const Routes = ({greeting}) => {
                 <Route path="/" exact>
                     <Home greeting="HORA AZUL DoP STORE"/>
                 </Route>
-                <Route path="/category/:categoryName?">
+                <Route path="/category/:categoryName">
                     <ItemListContainer/>
                 </Route>
                 <Route exact path = "/item/:productId">
                     <ItemDetailContainer />
                  </Route>
-                 <Route path='/category/:categoryName'>
-					<Category />
+                 <Route path='/category/:category'>
+					<Category/>
 				</Route>      
                 <Route path="/cart">
                     <Cart/>
