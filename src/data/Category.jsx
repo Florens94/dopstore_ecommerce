@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 import { Fragment, useState } from 'react'
+=======
+import { Fragment } from 'react'
+>>>>>>> 3ae06028347ec5f9119f79b214c2b63673ec0f66
 import Item from '../components/Item/Item'
 import { useParams } from 'react-router-dom'
 import {database} from '../firebase'
 
 const Category = () => {
+<<<<<<< HEAD
 		const [productosAMostrar, setProductosAMostrar] =useState([])
 		
 		  const categoria = "nikon"
@@ -20,6 +25,17 @@ const Category = () => {
 			<Fragment>
 				<h1>
 					{categoria.charAt(0).toUpperCase()}
+=======
+	const { categoryName } = useParams()
+	const products = products.filter((item) => item.category === categoryName)
+    const lentes = database.collection('lentes').where('category', '===', categoryName)
+
+	return (
+
+			<Fragment>
+				<h1>
+					{categoryName.charAt(0).toUpperCase()}
+>>>>>>> 3ae06028347ec5f9119f79b214c2b63673ec0f66
 				</h1>
 				<div>
 					{lentes.map((item) => (
@@ -32,8 +48,17 @@ const Category = () => {
 					))}
 				</div>
 			</Fragment>
+<<<<<<< HEAD
 
 	)
 }
 
 export default Category
+=======
+
+	)
+}
+
+export default Category
+
+>>>>>>> 3ae06028347ec5f9119f79b214c2b63673ec0f66
